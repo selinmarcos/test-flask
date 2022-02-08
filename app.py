@@ -14,8 +14,8 @@ app = flask.Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-    fecha = int(request.args['fecha'])
-    try:
-        return fecha
-    except KeyError:
-        return "INVALID"
+    # fecha = int(request.args['fecha'])
+    # try:
+    #     return fecha
+    # except KeyError:
+    return "HELLO MY FRIEND"
