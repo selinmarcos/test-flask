@@ -53,7 +53,7 @@ def home():
     d = int(dia) - 1
 
     print(year, mes, dia)
-    path= f'{year}.xls'
+    path= f'{year}.xlsx'
     #leemos el excel usando pandas
     valor = pd.read_excel(path, usecols= mes, header= d, nrows=0, index_col=None)
     data = valor.columns.values[0]
