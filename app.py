@@ -61,4 +61,4 @@ def home():
     return jsonify({"respuesta":data})
 
 # if __name__ == '__app__':
-# app.run( debug=True, port=7774)
+app.run( debug=True, port=7774)
